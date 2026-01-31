@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta property='og:title' content='M-Star: Markovian-Projected Star-Shaped Diffusion'/>
+    <meta property='og:title' content='M-Star: Markovian Projection of Star-Shaped Diffusion for Exponential Family Distributions'/>
     <meta property='og:url' content='#'/>
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>M-Star: Markovian-Projected Star-Shaped Diffusion</title>
+    <title>M-Star: Markovian Projection of Star-Shaped Diffusion for Exponential Family Distributions</title>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="./static/css/index.css">
     <link rel="icon" href="./static/images/favicon.svg">
     <link rel="stylesheet" href="juxtapose/css/juxtapose.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
     <script src="./static/js/bulma-carousel.min.js"></script>
@@ -40,7 +39,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">M-Star:<br> Markovian-Projected Star-Shaped Diffusion</h1>
+            <h1 class="title is-2 publication-title">M-Star: Markovian Projection of Star-Shaped Diffusion for Exponential Family Distributions</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="#">Anonymous</a><sup>1</sup>
@@ -75,9 +74,10 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://anonymous.4open.science/r/MStar-Diffusion-B3EE/models/" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://anonymous.4open.science/r/MStar-Diffusion-B3EE/models/" 
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                        <i class="ai ai-obp"></i>
+                        <i class="fas fa-cube"></i> <!-- Changed icon to a cube representing a model -->
                     </span>
                     <span>Models</span>
                   </a>
@@ -151,7 +151,19 @@ input[type=range] { width: 100%; cursor: pointer; margin: 20px 0; }
 </style>
 <!-- Step Comparison Slider Section -->
 <section class="section">
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+    <img src="static/images/logo.png" alt="M-Star Logo" style="height: 50px; width: auto;">
+    <h1 style="margin: 0; color: #1e293b; font-size: 1.8rem;">M-Star Diffusion</h1>
+</div>
   <div class="container is-max-desktop has-text-centered">
+
+
+          <div class="content has-text-justified">
+            <p>
+              <strong>Abstract:</strong> Diffusion models achieve state-of-the-art performance in generative modeling but are limited by their reliance on Gaussian noise and the high computational cost of iterative sampling. Star-shaped diffusion addresses the former by introducing a non-Markovian forward process, yet this comes at the expense of temporal coherence in the reverse process. We propose a novel framework that resolves this trade-off by learning a Markovian projection of a star-shaped forward process, and its reversal. This design enables learning over a broad class of exponential models and recovers DDPM as a special case. It is particularly well-suited for knowledge distillation, allowing few-step or even single-step generation. Experiments demonstrate the effectiveness and flexibility of our approach across multiple generative tasks.
+            </p>
+          </div>
+
     <div class="grid">
       <div class="model-card">
         <div class="model-name">DDPM</div>
@@ -166,7 +178,7 @@ input[type=range] { width: 100%; cursor: pointer; margin: 20px 0; }
         <img id="img-shortcut" class="result-img" alt="Shortcut">
       </div>
       <div class="model-card">
-        <div class="model-name">M-Star (Ours)</div>
+        <div class="model-name"><strong>M-Star (Ours)</strong></div>
         <img id="img-mstar" class="result-img" alt="M-Star">
       </div>
     </div>
@@ -174,9 +186,9 @@ input[type=range] { width: 100%; cursor: pointer; margin: 20px 0; }
       <div>Steps: <span id="stepValue" class="step-label">256</span></div>
       <input type="range" id="stepSlider" min="0" max="2" step="1" value="0">
       <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #6b7280;">
-        <span>256 Steps</span>
-        <span>128 Steps</span>
         <span>One Step</span>
+        <span>128 Steps</span>
+        <span>256 Steps</span>
       </div>
     </div>
   </div>
@@ -184,20 +196,14 @@ input[type=range] { width: 100%; cursor: pointer; margin: 20px 0; }
 
 
   <!-- Abstract Section -->
-  <section class="section">
+  <!-- <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Diffusion models achieve state-of-the-art performance in generative modeling but are limited by their reliance on Gaussian noise and the high computational cost of iterative sampling. Star-shaped diffusion addresses the former by introducing a non-Markovian forward process, yet this comes at the expense of temporal coherence in the reverse process. We propose a novel framework that resolves this trade-off by learning a Markovian projection of a star-shaped forward process, and its reversal. This design enables learning over a broad class of exponential models and recovers DDPM as a special case. It is particularly well-suited for knowledge distillation, allowing few-step or even single-step generation. Experiments demonstrate the effectiveness and flexibility of our approach across multiple generative tasks.
-            </p>
-          </div>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="section">
     <div class="hero-body">
@@ -397,7 +403,7 @@ const slider = document.getElementById('stepSlider');
 const stepValueLabel = document.getElementById('stepValue');
 
 const basePath = "static/images/slider_steps/";
-const stepValues = ["256", "128", "one"];
+const stepValues = ["one", "128", "256"];
 const modelNames = ["ddpm", "flow", "shortcut", "mstar"];
 
 const imgElements = {
