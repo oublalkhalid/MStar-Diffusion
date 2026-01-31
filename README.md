@@ -5,7 +5,7 @@ This repository contains the official JAX and PyTorch implementation for the pap
 M-Star is a novel diffusion framework that combines the flexibility of star-shaped forward processes with the stability of traditional DDPMs. By learning a Markovian projection of star-shaped diffusion, M-Star enables generative modeling with a broad class of exponential family distributions while maintaining temporal coherence in the reverse process.
 
 <p align="center">
-  <img src="figures/framework_diagram.png" width="800">
+  <img src="docs/figures/framework_diagram.png" width="800">
 </p>
 
 ## Abstract
@@ -596,12 +596,10 @@ python train.py --config config.yaml --mt_lr 1e-3
 If you use this code or find our work helpful, please cite:
 
 ```bibtex
-@inproceedings{mstar2026,
+@inproceedings{anonymous,
   title={Markovian Projection of Star-Shaped Diffusion for Exponential Family Distributions},
   author={[Authors]},
-  booktitle={Proceedings of the 43rd International Conference on Machine Learning},
   year={2026},
-  organization={PMLR}
 }
 ```
 
