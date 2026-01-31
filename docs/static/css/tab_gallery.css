@@ -5,10 +5,18 @@
     padding: 5px;
   }
   
-/* Style the images inside the grid */
+/* Style the images inside the grid
 .tab_column img {
 opacity: 0.8;
 cursor: pointer;
+} */
+
+.tab_column img {
+  opacity: 0.8;
+  width: 100%;
+  max-width: 260px;   /* increase this */
+  height: auto;
+  cursor: pointer;
 }
 
 .tab_column img:hover {

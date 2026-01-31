@@ -3,32 +3,45 @@
 
 <head>
     <meta charset="utf-8">
-    <!-- Meta tags for social media banners -->
-    <meta property='og:title' content='M-Star: Markovian Projection of Star-Shaped Diffusion for Exponential Family Distributions'/>
-    <meta property='og:url' content='https://anonymous.4open.science/w/MStar-Diffusion-B3EE/'/>
-    <meta property="og:image" content="static/images/banner.png" />
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <!-- <meta name="description" content="DESCRIPTION META TAG"> -->
+
+    <meta property='og:title' content='M-Star: Markovian-Projected Star-Shaped Diffusion'/>
+    <meta property='og:url' content='#'/>
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
+    <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png"> -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <!-- Keywords for your paper to be indexed by-->
+    <!-- <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>M-Star: Markovian Projection of Star-Shaped Diffusion</title>
+    <title>M-Star: Markovian-Projected Star-Shaped Diffusion</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+    rel="stylesheet">
     <link rel="stylesheet" href="./static/css/bulma.min.css">
     <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="./static/css/tab_gallery.css">
     <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="./static/css/index.css">
     <link rel="icon" href="./static/images/favicon.svg">
+    <link rel="stylesheet" href="juxtapose/css/juxtapose.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+    <script src="./static/js/magnifier.js"></script>
     <link href="https://fonts.cdnfonts.com/css/menlo" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/image_card_fader.css">
     <link rel="stylesheet" href="./static/css/image_card_slider.css">
@@ -40,26 +53,23 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">M-Star: Markovian Projection of Star-Shaped Diffusion<br>for Exponential Family Distributions</h1>
+          <h1 class="title is-2 publication-title">M-Star:<br> Markovian-Projected Star-Shaped Diffusion</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Anonymous Authors</span>
+            <span class="author-block">
+              <a href="#">anonymous</a><sup>1</sup></span>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>anonymous</span>
           </div>
 
           <div class="is-size-5 publication-venue">
-            Under Review
+            Under review
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <span class="link-block">
-                <a href="https://anonymous.4open.science/w/MStar-Diffusion-B3EE/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code (Anonymous)</span>
-                </a>
-              </span>
               <span class="link-block">
                 <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
@@ -69,15 +79,25 @@
                   <span>Paper</span>
                 </a>
               </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://anonymous.4open.science/r/MStar-Diffusion-B3EE/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
               <span class="link-block">
                 <a href="#bibtex"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-obp"></i>
                   </span>
-                  <span>BibTeX</span>
+                  <span>BibTex</span>
                 </a>
-              </span> 
+              </span>
             </div>
           </div>
         </div>
@@ -86,66 +106,6 @@
   </div>
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop has-text-centered">
-      <h3 class="title is-4">M-Star combines flexibility of star-shaped diffusion with stability of DDPMs</h3>
-      <div class="content has-text-justified">
-        <p>
-          <b>M-Star learns a Markovian projection of star-shaped forward processes, enabling diffusion with exponential family distributions while maintaining temporal coherence.</b>
-        </p>
-      </div>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-framework">
-          <img src="./static/images/framework_comparison.png" class="interpolation-image"/>
-        </div>
-        <div class="item item-framework">
-          <img src="./static/images/markovian_projection.png" class="interpolation-image"/>
-        </div>
-        <div class="item item-framework">
-          <img src="./static/images/sufficient_tail_statistic.png" class="interpolation-image"/>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container is-max-desktop has-text-centered">
-    <h3 class="title is-4">High-quality generation across multiple distributions</h3>
-    <div class="content has-text-justified">
-      <p>
-        <b>M-Star achieves state-of-the-art results on ImageNet while supporting diverse exponential family distributions including Gaussian, Beta, von Mises-Fisher, Dirichlet, and Wishart.</b>
-      </p>
-    </div>
-    <div id="results-carousel" class="carousel results-carousel">
-      <div class="item item-generation">
-        <img src="./static/images/imagenet_results_1.png" class="interpolation-image"/>
-      </div>
-      <div class="item item-generation">
-        <img src="./static/images/imagenet_results_2.png" class="interpolation-image"/>
-      </div>
-      <div class="item item-generation">
-        <img src="./static/images/imagenet_results_3.png" class="interpolation-image"/>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop has-text-centered">
-      <h2 class="title is-4">Few-step generation via progressive distillation</h2>
-      <div class="content has-text-justified">
-        <p>
-          <b>M-Star is naturally suited for progressive distillation.</b> By training the model to predict clean data from any timestep, M-Star enables efficient compression to 8-step or even 1-step generation while maintaining high sample quality.
-        </p>
-      </div>
-      <div class="content has-text-centered">
-          <img src="./static/images/distillation_results.png" width="90%">
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -155,238 +115,225 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Diffusion models achieve state-of-the-art performance in generative modeling but are limited by their reliance on Gaussian noise and the high computational cost of iterative sampling. Star-shaped diffusion addresses the former by introducing a non-Markovian forward process, yet this comes at the expense of temporal coherence in the reverse process. We propose a novel framework that resolves this trade-off by learning a Markovian projection of a star-shaped forward process, and its reversal. This design enables learning over a broad class of exponential models and recovers DDPM as a special case. It is particularly well-suited for knowledge distillation, allowing few-step or even single-step generation. Experiments demonstrate the effectiveness and flexibility of our approach across multiple generative tasks.
+            We propose a method to distill a complex multistep diffusion model into a single-step conditional GAN student model, dramatically accelerating inference while preserving image quality.
+            Our approach interprets the diffusion distillation as a paired image-to-image translation task, using noise-to-image pairs of the diffusion model's ODE trajectory. For efficient regression loss computation, we propose E-LatentLPIPS, a Perceptual loss in the latent space of the diffusion model with an ensemble of augmentations. 
+            Despite dataset construction costs, E-LatentLPIPS converges more efficiently than many existing distillation methods. 
+            Furthermore, we adapt a diffusion model to construct a multi-scale discriminator with a text alignment loss to build an effective conditional GAN-based formulation.
+            We demonstrate that our one-step generator outperforms cutting-edge one-step diffusion distillation models, DMD, SDXL-Turbo, and SDXL-Lightning, on the zero-shot COCO benchmark.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
+
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    
-    <!-- Framework -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">M-Star Framework</h2>
 
-        <!-- Markovian Projection -->
-        <h3 class="title is-4">Markovian projection of star-shaped processes</h3>
-        
-        <div class="content has-text-centered">
-            <img src="./static/images/markovian_projection_diagram.png" width="100%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            M-Star introduces a <b>Markovian projection</b> that constructs a kernel k<sub>t</sub>(z<sub>t</sub> | z<sub>t-1</sub>, z<sub>0</sub>) which exactly preserves the marginal distributions of a given star-shaped forward process. The kernel is derived using an auxiliary density in the conjugate exponential family, ensuring computational efficiency while maintaining the flexibility to work with diverse distributions.
-          </p>
-          <br>
-        </div>
-
-        <!-- Sufficient Tail Statistic -->
-        <h3 class="title is-4">Efficient reversal via sufficient tail statistic</h3>
-        
-        <div class="content has-text-centered">
-            <img src="./static/images/tail_statistic_computation.png" width="90%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            The <b>sufficient tail statistic</b> s<sub>t</sub> = Σ<sub>k=t</sub><sup>T</sup> A<sub>k</sub><sup>T</sup> ψ(z<sub>k</sub>) compresses the entire future trajectory into a fixed-size representation without losing information about the reverse step. This enables efficient implementation while the network learns to predict clean data z<sub>0</sub> directly from s<sub>t</sub>, making the model naturally suited for distillation.
-          </p>
-          <br>
-        </div>
-
-        <!-- Interaction Matrix Learning -->
-        <h3 class="title is-4">Learnable interaction matrix</h3>
-        <div class="content has-text-centered">
-            <img src="./static/images/interaction_matrix_learning.png" width="90%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            The <b>interaction matrix M<sub>t</sub></b> governs the balance between local consistency (from z<sub>t</sub>) and global guidance (from z<sub>0</sub>). M-Star learns M<sub>t</sub> by minimizing the KL divergence between the ideal reverse step and the approximate step using predicted z<sub>0</sub>. For Gaussian distributions, the learned M<sub>t</sub> converges to the theoretical DDPM value, validating the framework.
-          </p>
-          <br>
-        </div>
-
-        <!-- DDPM Equivalence -->
-        <h3 class="title is-4">Gaussian case: equivalence with DDPM</h3>
-        <div class="content has-text-centered">
-            <img src="./static/images/ddpm_convergence.png" width="80%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            When using Gaussian marginals, M-Star <b>exactly recovers standard DDPM</b> under specific design choices. The heatmap shows the convergence of the learned interaction matrix to the theoretical DDPM value M<sub>t</sub> = √α<sub>t</sub>/β<sub>t</sub> I across training iterations and diffusion timesteps, demonstrating that M-Star naturally generalizes DDPM.
-          </p>
-          <br>
-        </div>
-      </div>
-    </div>
-
-    <!-- Experimental Results -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Experimental Results</h2>
-        
-        <!-- ImageNet Results -->
-        <h3 class="title is-4">ImageNet 64×64 and 128×128 generation</h3>
-        
-        <div class="content has-text-centered">
-            <img src="./static/images/imagenet_benchmark.png" width="100%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            On ImageNet 64×64, our <b>8-step M-Star student</b> achieves FID of 1.24 and IS of 78, outperforming both the 1024-step teacher (FID 1.42) and competing distillation methods. On ImageNet 128×128, M-Star maintains superior performance with FID 1.49 and IS 184 in just 8 steps.
-          </p>
-        </div>
-
-        <!-- CIFAR Anomaly Detection -->
-        <h3 class="title is-4">Anomaly detection on MNIST and CIFAR</h3>
-        
-        <div class="content has-text-centered">
-            <img src="./static/images/anomaly_detection_results.png" width="90%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            M-Star demonstrates strong performance on <b>unsupervised anomaly detection</b> tasks, achieving AUPRC scores of 0.690 (MNIST digit 1), 0.918 (MNIST digit 4), and 0.942 (MNIST digit 5), significantly outperforming VAE, BiGAN, LEBM, and other baseline methods.
-          </p>
-          <br>
-        </div>
-
-        <!-- Comparison with Baselines -->
-        <h3 class="title is-4">Step-count vs. sample quality trade-off</h3>
-        
-        <div class="content has-text-centered">
-            <img src="./static/images/steps_vs_fid.png" width="85%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            M-Star achieves <b>superior FID at all step counts</b> compared to SS-DDPM, DDPM, Flow Matching, and Shortcut models. The Markovian projection ensures temporal coherence, making M-Star particularly effective for few-step generation where SS-DDPM suffers from trajectory inconsistency.
-          </p>
-          <br>
-        </div>
-
-        <!-- Non-Gaussian Distributions -->
-        <h3 class="title is-4">Generation with non-Gaussian distributions</h3>
-        <div class="content has-text-centered">
-            <img src="./static/images/distribution_results.png" width="100%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            M-Star supports diverse exponential family distributions. <b>Left:</b> von Mises-Fisher distribution on geodesic fire data (spherical coordinates). <b>Right:</b> Dirichlet distribution on synthetic compositional data. The model achieves lower KL divergence than both DDPM and SS-DDPM baselines.
-          </p>
-          <br>
-        </div>
-
-        <!-- Progressive Distillation -->
-        <h3 class="title is-4">Progressive distillation ablation</h3>
-        <div class="content has-text-centered">
-            <img src="./static/images/distillation_ablation.png" width="85%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            The table shows M-Star's distillation performance at different step counts. The model maintains high quality even at 8 steps, with the distilled student often <b>surpassing the teacher</b> by aggregating predictions through the sufficient tail statistic, reducing variance from inconsistent estimates.
-          </p>
-          <br>
-        </div>
-
-        <!-- Classifier-Free Guidance -->
-        <h3 class="title is-4">Classifier-free guidance sensitivity</h3>
-        <div class="content has-text-centered">
-            <img src="./static/images/cfg_ablation.png" width="85%">
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            M-Star remains <b>stable at high guidance scales</b> while improving semantic alignment (IS and CLIP scores). Unlike standard DDPMs that drift off-manifold at high guidance, M-Star's anchoring to the global hub prevents this degradation.
-          </p>
-          <br>
-        </div>
-      </div>
-    </div>
-
-    <!-- Diverse Samples -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
-      <h2 class="title is-3">Sample Diversity and Quality</h2>
+      <h2 class="title is-4">Two-step Distillation image generation using SS-DDPM and M-Star (ours)</h2>
       <div class="content has-text-justified">
         <p>
-          <b>M-Star generates diverse, high-quality samples across different distributions and datasets.</b> The model balances diversity with fidelity, producing varied outputs while maintaining strong text-image alignment and visual quality.
+          <b>The images generated by M-Star Distilation</b> This indicates that we can generate High-resolution preview images using M-Star with limited steps.
+          <br> 
+        </p>
+      </div>
+            <!-- The grid: four columns -->
+      <div class="tab_row">
+        <div class="tab_column">
+
+          <img src="./static/images/waterfall_input.jpeg" onclick="tab_gallery_click('waterfall');">
+        </div>
+        <div class="tab_column">
+          <img src="./static/images/jelly_input.jpeg" onclick="tab_gallery_click('jelly');">
+        </div>
+        <div class="tab_column">
+          <img src="./static/images/monet_input.jpeg" onclick="tab_gallery_click('monet');">
+        </div>
+        <div class="tab_column">
+          <img src="./static/images/handsome_input.jpeg" onclick="tab_gallery_click('handsome');">
+        </div>
+        <div class="tab_column">
+          <img src="./static/images/mushroom_input.jpeg" onclick="tab_gallery_click('mushroom');">
+        </div>
+        <div class="tab_column">
+          <img src="./static/images/castle_input.jpeg" onclick="tab_gallery_click('castle');">
+        </div>
+      </div>
+
+      <!-- The expanding image container -->
+      <div class="tab_container">
+        <!-- Close the image -->
+        <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
+
+        <!-- Expanded image -->
+        <div id="juxtapose-embed" data-startingposition="20%" data-animate="true">
+        </div>
+
+        <div>
+          <div id="juxtapose-hidden"></div>
+        </div>
+        
+        <!-- Image text -->
+        <div id="imgtext"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-4">Markovian-Projected Star-Shaped Diffusion</h3>
+      <div class="content has-text-justified">
+        <p>
         </p>
       </div>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-samples">
-          <img src="./static/images/diverse_samples_1.png" class="interpolation-image"/>
+        <div class="item item-t2i0">
+          <img id="myt2i0" src="./static/images/ode_learning0.png"
+          class="interpolation-image"/>
         </div>
-        <div class="item item-samples">
-          <img src="./static/images/diverse_samples_2.png" class="interpolation-image"/>
-        </div>
-        <div class="item item-samples">
-          <img src="./static/images/diverse_samples_3.png" class="interpolation-image"/>
-        </div>
-        <div class="item item-samples">
-          <img src="./static/images/diverse_samples_4.png" class="interpolation-image"/>
+        <div class="item item-t2i0">
+        <img id="myt2i0" src="./static/images/ode_learning1.png"
+        class="interpolation-image"/>
+      </div>
+      <div class="item item-t2i0">
+        <img id="myt2i0" src="./static/images/ode_learning2.png"
+        class="interpolation-image"/>
+      </div>
+        <div class="item item-t2i1">
+          <img id="myt2i1" src="./static/images/ode_learning3.png"
+          class="interpolation-image"/>
         </div>
       </div>
     </div>
   </div>
-    
-    <br>
+</div>
+</section> -->
 
-    <!-- Related Works -->
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3 has-text-centered">Related Works</h2>
-          <div class="content has-text-justified">
-            <p>
-              <li>Jonathan Ho, Ajay Jain, and Pieter Abbeel. <a href="https://arxiv.org/abs/2006.11239">Denoising Diffusion Probabilistic Models.</a> In NeurIPS, 2020.</li><br>
-              
-              <li>Andrey Okhotin, Dmitry Molchanov, Vladimir Arkhipkin, Grigory Bartosh, Viktor Ohanesian, Aibek Alanov, and Dmitry Vetrov. <a href="https://arxiv.org/abs/2302.05259">Star-Shaped Denoising Diffusion Probabilistic Models.</a> In NeurIPS, 2023.</li><br>
-              
-              <li>Tim Salimans and Jonathan Ho. <a href="https://arxiv.org/abs/2202.00512">Progressive Distillation for Fast Sampling of Diffusion Models.</a> In ICLR, 2022.</li><br>
-              
-              <li>Yaron Lipman, Ricky T. Q. Chen, Heli Ben-Hamu, Maximilian Nickel, and Matt Le. <a href="https://arxiv.org/abs/2210.02747">Flow Matching for Generative Modeling.</a> In ICLR, 2023.</li><br>
-              
-              <li>Emiel Hoogeboom, Alexey A. Gritsenko, Jasmijn Bastings, Ben Poole, Rianne van den Berg, and Tim Salimans. <a href="https://arxiv.org/abs/2107.03006">Autoregressive Diffusion Models.</a> In ICLR, 2022.</li><br>
-              
-              <li>Valentin De Bortoli, James Thornton, Jeremy Heng, and Arnaud Doucet. <a href="https://arxiv.org/abs/2105.14762">Diffusion Schrödinger Bridge with Applications to Score-Based Generative Modeling.</a> In NeurIPS, 2021.</li><br>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-  </div>
-</section>
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title"><a id="bibtex">BibTeX</a></h2>
-    <pre><code>@inproceedings{anonymous2026mstar,
-  title={{M-Star: Markovian Projection of Star-Shaped Diffusion for Exponential Family Distributions}},
-  author={Anonymous},
-  booktitle={Under Review at International Conference on Machine Learning (ICML)},
-  year={2026}
-}</code></pre>
-  </div>
-</section>
 
 <footer class="footer">
-  <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content has-text-centered">
+        <div class="content">
           <p>
-            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            Website template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            Website adapted from the following <a href="https://github.com/nerfies/nerfies.github.io">source code</a>.
           </p>
         </div>
       </div>
     </div>
   </div>
 </footer>
+
+
+<script src="juxtapose/js/juxtapose.js"></script>
+
+<script>
+var slider;
+let origImages = [
+  {"src": "./static/images/mushroom_input.jpeg", "label": "Generated by SS-DDPM",},
+  {"src": "./static/images/mushroom_output.jpeg", "label": "Generated by M-Star",}
+];
+let origOptions = {
+    "makeResponsive": true,
+    "showLabels": true,
+    "mode": "horizontal",
+    "showCredits": true,
+    "animate": true,
+    "startingPosition": "50"
+};
+
+const juxtaposeSelector = "#juxtapose-embed";
+const transientSelector = "#juxtapose-hidden";
+
+
+function tab_gallery_click(name) {
+  // Get the expanded image
+  let inputImage = {
+    label: "Generated by M-Star (512px)",
+  };
+  let outputImage = {
+    label: "8 x Upsampled by SS-DDPM (4K)",
+  };
+
+  inputImage.src = "./static/images/".concat(name, "_input.jpeg")
+  outputImage.src = "./static/images/".concat(name, "_output.jpeg")
+
+  let images = [inputImage, outputImage];
+  let options = slider.options;
+  options.callback = function(obj) {
+      var newNode = document.getElementById(obj.selector.substring(1));
+      var oldNode = document.getElementById(juxtaposeSelector.substring(1));
+      console.log(obj.selector.substring(1));
+      console.log(newNode.children[0]);
+      oldNode.replaceChild(newNode.children[0], oldNode.children[0]);
+      //newNode.removeChild(newNode.children[0]);
+      
+  };
+  
+  slider = new juxtapose.JXSlider(transientSelector, images, options);
+};
+
+
+
+(function() {
+    slider = new juxtapose.JXSlider(
+        juxtaposeSelector, origImages, origOptions);
+    //document.getElementById("left-button").onclick = replaceLeft;
+    //document.getElementById("right-button").onclick = replaceRight;
+})();
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  // expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = name;
+  // Show the container element (hidden with CSS)
+  // expandImg.parentElement.style.display = "block";
+
+$(".flip-card").click(function() {
+            console.log("fading in")
+            div_back = $(this).children().children()[1]
+            div_front = $(this).children().children()[0]
+            // console.log($(this).children("div.flip-card-back"))
+            console.log(div_back)
+            $(div_front).addClass("out");
+            $(div_front).removeClass("in");
+
+            $(div_back).addClass("in");
+            $(div_back).removeClass("out");
+
+});
+
+$(".flip-card").mouseleave(function() {
+            console.log("fading in")
+            div_back = $(this).children().children()[1]
+            div_front = $(this).children().children()[0]
+            // console.log($(this).children("div.flip-card-back"))
+            console.log(div_back)
+            $(div_front).addClass("in");
+            $(div_front).removeClass("out");
+
+            $(div_back).addClass("out");
+            $(div_back).removeClass("in");
+
+});
+
+</script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>    
 
 </body>
 </html>
