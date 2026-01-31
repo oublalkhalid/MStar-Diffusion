@@ -618,14 +618,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-We thank the authors of SS-DDPM for their foundational work on star-shaped diffusion processes. This work builds upon their insights to create a more practical and flexible framework.
-
-## Contact
-
-For questions, issues, or collaboration opportunities:
-- Create an issue in this repository
-- Email: [contact email]
-- Project page: [URL]
+We thank the authors of SS-DDPM for their initial foundational work on star-shaped diffusion processes. This work builds upon their insights to create a more practical and flexible framework.
 
 ---
 
