@@ -23,6 +23,13 @@ cursor: pointer;
 opacity: 1;
 }
 
+.tab_row {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  flex-wrap: wrap;           /* allow wrapping */
+  gap: 1rem;                 /* space between images */
+}
+
 /* Clear floats after the columns */
 .tab_row:after {
 content: "";
